@@ -1,6 +1,7 @@
-const ServerConfig = {
-  PORT: process.env.PORT || 3001, // Use the environment variable PORT if defined, otherwise default to 3000
-  // other configuration properties...
-};
+const dotenv = require("dotenv");
 
-module.exports = ServerConfig;
+dotenv.config();
+
+module.exports = {
+  PORT: process.env.PORT,
+};
